@@ -88,7 +88,7 @@ export default function ShopCategories() {
                             <ChevronLeft className="w-5 h-5 text-gray-700" />
                         </button>
 
-                        <span className="text-sm text-gray-600 min-w-[40px] text-center">
+                        <span className="text-sm text-gray-600 min-w-10 text-center">
                             {currentPage}/{totalPages}
                         </span>
 
@@ -109,7 +109,7 @@ export default function ShopCategories() {
                             key={category.id}
                             className="group relative bg-gray-50 rounded-lg overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg"
                         >
-                            <div className="aspect-[3/4] overflow-hidden bg-gray-100">
+                            <div className="aspect-3/4 overflow-hidden bg-gray-100">
                                 <img
                                     src={category.image}
                                     alt={category.title}

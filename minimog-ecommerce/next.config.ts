@@ -7,10 +7,8 @@ const turbopackRoot = process.env.TURBOPACK_ROOT
 
 const nextConfig: NextConfig = {
   // Allow overriding the Turbopack root via env var for CI (e.g. Vercel)
-  experimental: {
-    turbopack: {
-      root: turbopackRoot,
-    },
+  turbopack: {
+    root: turbopackRoot,
   },
 };
 

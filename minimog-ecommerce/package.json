@@ -7,12 +7,9 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "dev": "next dev",
-    "dev:nowebpack": "set \"NEXT_DISABLE_TURBOPACK=1\" && next dev",
+    "dev": "cmd /c start \"\" http://localhost:3000 && set \"TURBOPACK_ROOT=%CD%\" && next dev",
     "build": "prisma generate && next build",
-    "start": "next start",
-    "lint": "eslint",
-    "postinstall": "prisma generate"
+    "start": "next start"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.2.0",
@@ -29,6 +26,7 @@
     "dotenv": "^17.2.3",
     "lucide-react": "^0.561.0",
     "next": "16.0.10",
+    "next-on-netlify": "^3.0.1",
     "pg": "^8.16.3",
     "prisma": "^7.2.0",
     "react": "19.2.1",
@@ -38,7 +36,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.10",

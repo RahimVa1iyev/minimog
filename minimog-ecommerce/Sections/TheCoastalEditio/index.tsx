@@ -25,7 +25,7 @@ export default function CoastalEditionSection() {
                         Our new cozy collection is made with environmentally friendly materials and<br />
                         simple to care for so you can stay cozy wherever.
                     </p>
-                    <button className="px-6 py-2 border border-black hover:bg-black rounded-[6px] hover:text-white transition-colors font-medium">
+                    <button className="px-6 py-2 border border-black hover:bg-black rounded-md hover:text-white transition-colors font-medium">
                         Shop Now
                     </button>
                 </div>

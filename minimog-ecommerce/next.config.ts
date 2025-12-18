@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
+const turbopackRoot = process.env.TURBOPACK_ROOT ?? './';
+
 const nextConfig: NextConfig = {
-  // Ensure Turbopack resolves the correct workspace root (minimog-ecommerce)
+  // Allow overriding the Turbopack root via env var for CI (e.g. Vercel)
   turbopack: {
-    root: './',
+    root: turbopackRoot,
   },
 };
 
